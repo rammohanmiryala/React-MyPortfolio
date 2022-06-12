@@ -1,17 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react'
 
-
-
-class contactUs extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+export default class contactUs extends Component {
+  render() {
+    return (
+      <div>contactUs</div>
+    )
+  }
 }
-
-export default contactUs;

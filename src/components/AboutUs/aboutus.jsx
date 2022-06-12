@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react'
 
-class aboutus extends Component {
+export default class aboutus extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
-    );
+      <div>aboutus</div>
+    )
   }
 }
-
-export default aboutus;
