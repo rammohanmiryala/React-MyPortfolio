@@ -3,11 +3,8 @@
   --testborder: 1px solid #37ffd0;
   --blue: rgb(202, 233, 251);
 }
-*/
-
-
- /* For demonstration purposes only: */
- body {
+/* For demonstration purposes only: */
+body {
   font-size: 4.5em;
 }
 h1 {
@@ -20,7 +17,7 @@ h1 {
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 @keyframes wave-animation {
@@ -58,8 +55,8 @@ h1 {
   height: 80vh;
 }
 .introbody {
-  /* border-left: 1px solid #9b9b9b; */
-  border: var(--testborder);
+  border-left: 1px solid #9b9b9b;
+  /* border: var(--testborder); */
   margin: 0 auto;
   position: relative;
 }
@@ -68,7 +65,7 @@ col {
   border: var(--testborder);
 }
 .bodytag {
-  margin-left: 8%;
+  /* margin-left: 8%; */
 }
 .tagtext {
   /* margin-left: 5em;  */
@@ -78,7 +75,7 @@ col {
 .wavetext {
   font-size: 1em;
   position: absolute;
-  top: 11%;
+  top: 10%;
   margin-left: 1em;
 }
 .hitext {
@@ -86,7 +83,7 @@ col {
 }
 .nameletter {
   font-size: 6em;
-  margin-left: 0.5em;
+  margin-left: 0em;
 }
 .nameletterdiv {
 }
@@ -94,6 +91,20 @@ col {
   font-family: "Text Me One", sans-serif;
   /* font-size: 20em; */
   color: var(--pink);
-  font-size: 4em;
+  font-size: 3.5em;
   border: var(--testborder);
+}
+.amletter {
+  font-size: 1.2em;
+  color: var(--pink);
+}
+.dotsletter {
+  font-family: "Text Me One", sans-serif;
+  font-size: 0.6em;
+}
+.designertext{
+  position: absolute;
+  margin-left: 1em;
+  top: 70%;
+
 }
