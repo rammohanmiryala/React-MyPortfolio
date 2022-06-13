@@ -1,40 +1,45 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+}
 /* :root {
     --dark: rgb(254, 217, 143);
     --light: rgb(254, 252, 212);
     --blue: rgb(202, 233, 251);
   } */
 
-.itemSpacing {
-  margin-right: 3em;
-  font-size: 1em;
+.nav {
+  margin-top: 1em;
   color: #ffd4d4;
-  padding: 1em;
-  text-decoration: none;
-
-  
-}
-.itemSpacing:hover {
-  color: #37ffd0;
-  border-bottom: 1px solid #37ffd0;
-  
 }
 
 .navContainer {
   margin: 1em;
 }
+.itemSpacing {
+  margin-right: 3em;
+  font-size: 1em;
+  color: #ffd4d4;
+  padding: 0.8em;
+  text-decoration: none;
+  border-bottom: 1px solid #002b36;
+  transition: border-bottom 0.5s ease-in;
+  text-align: center;
+}
+.itemSpacing:hover {
+  color: #37ffd0;
+  border-bottom: 1px solid #37ffd0;
+}
 
 .resumeButton {
-  border: 0.15em solid #37ffd0;
+  border: 0.1em solid #37ffd0;
   background-color: transparent;
   padding: 0.5em 1.8em 0.5em 1.8em;
   border-radius: 0.5em;
   color: #ffd4d4;
   font-size: 1em;
+  transition: background-color 0.5s ease-in;
 }
-.nav {
-  margin-top: 1em;
-  color: #ffd4d4;
-}
+
 .resumeButton:hover {
   background-color: #103e4b;
   color: #37ffd0;
@@ -49,6 +54,8 @@
   }
   .itemSpacing {
     margin-top: 1em;
+    text-align: left;
+
   }
   .resumeButton {
     margin: 0 auto;
