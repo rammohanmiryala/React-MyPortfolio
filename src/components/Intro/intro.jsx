@@ -40,12 +40,7 @@ export default class intro extends Component {
                   <span className="dotsletter">..</span>
                 </Col>
               </Col>
-              <Row className="designertext App">
-                Life is simple{" "}
-                <span style={{ color: "red", fontWeight: "bold" }}>
-                  {/* Style will be inherited from the parent element */}
-                 
-                </span>
+              <Row className="designertext App">               
                 <Col lg="auto">Ui/Ux Designer</Col>
                 <Col lg="auto">& </Col>
                 <Col lg="auto">Web Developer &#x7B; &#xFF5D;;</Col>
