@@ -1,17 +1,12 @@
 :root {
   --pink: #ffd4d4;
   --testborder: 1px solid #37ffd0;
-  --textgreen:#37ffd0;
-  --bg-color: #2e3d4b;
-  --text-color: #76ecfc;
+  --textgreen: #37ffd0;
+  --text-color: #122932;
+  --background-color:#fbc93d;
+  /* --text-color: #76ecfc; */
 }
 /* For demonstration purposes only: */
-body {
-  font-size: 4.5em;
-}
-h1 {
-  font-size: 1.5em;
-}
 
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -20,6 +15,87 @@ h1 {
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
   font-size: 2em;
+}
+.testdiv {
+  /* border: 0.1em solid #eee;
+  margin: 1%; */
+}
+.outercontainer {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+.wavetext {
+  font-size: 1.2em;
+  /* padding-left: 12px; */
+  color: var(--text-color);
+}
+.nametext{
+  margin: 45px auto;
+  font-size: 1.2em;
+  color: var(--background-color)
+}
+.rletter {
+  /* font-family: "Zen Kurenaido", sans-serif; */
+  /* font-family: 'Monoton', cursive;
+  font-size: 200px;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 200px;
+  height: 200px;
+  color: var(--text-color);
+  color: var(--pink); */
+  /* border: 0.1em solid #eee; */
+  
+}
+.amletter {
+  /* font-family: "Zen Kurenaido", sans-serif; */
+  /* font-family: 'Monoton', cursive;
+  font-size: 100px;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 300px;
+  height: 200px; */
+  /* color: var(--pink); */
+  /* color: var(--text-color); */
+}
+
+.typewriter {
+  font-size: 30px;
+  /* padding-left: 95px; */
+  
+  color: var(--text-color);
+  padding-left: 150px;
+  width: 590px;
+}
+.typewrite {
+  color:  #a050d9;
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+  background-color: lightgreen;
+
+  
+
+}
+
+.aboutmetext {
+  padding-left: 18px;
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 
 @keyframes wave-animation {
@@ -48,7 +124,8 @@ h1 {
     transform: rotate(0deg);
   }
 }
-.aboutmetext {
+/* ------------------------------- */
+/* .aboutmetext {
   font-size: 1.2em;
 }
 
@@ -60,7 +137,6 @@ h1 {
 .introbody {
   border-left: 1px solid #9b9b9b;
   padding: 3% 0% 3% 0%;
-  /* border: var(--testborder); */
   margin: 0 auto;
   position: relative;
 }
@@ -72,11 +148,8 @@ h1 {
 col {
   border: var(--testborder);
 }
-.bodytag {
-  /* margin-left: 8%; */
-}
+
 .tagtext {
-  /* margin-left: 5em;  */
   border: var(--testborder);
   margin: 0 auto;
 }
@@ -97,7 +170,6 @@ col {
 }
 .Rletter {
   font-family: "Text Me One", sans-serif;
-  /* font-size: 20em; */
   color: var(--pink);
   font-size: 3em;
   border: var(--testborder);
@@ -114,15 +186,14 @@ col {
   position: absolute;
   margin-left: 0.4em;
   top: 65%;
-  /* left: 50%; */
   font-size: 1.5em;
 }
 .typewrite {
   color: var(--text-color);
   font-weight: bold;
-}
+} */
 @media (max-width: 575.98px) {
-  .designertext {
+  /* .designertext {
     top: 60%;
     font-size: 1.5em;
   }
@@ -146,13 +217,10 @@ col {
     font-size: 1em;
     text-align: justify;
 
-  }
-
-
+  } */
 }
-@media (min-width: 768px )and (max-width: 1024px)  { 
-
-  .designertext {
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .designertext {
     top: 65%;
     font-size: 1.5em;
   }
@@ -174,8 +242,5 @@ col {
   .aboutmetext{
     font-size: 0.9em;
     text-align: justify;
-  }
-
-
-
+  } */
 }
