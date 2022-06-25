@@ -29,7 +29,7 @@ const Intro = () => {
               id="ram"
               option={{
                 file: svg,
-                animTimingFunction: "EASE_OUT_BOUNCE",
+                animTimingFunction: "EASE_IN_BOUNCE",
                 type: "oneByOne",
                 duration: 2000,
                 
