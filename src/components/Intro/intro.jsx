@@ -5,9 +5,7 @@ import "./intro.css";
 import "./typewriter";
 import ReactVivus from "react-vivus";
 import svg from "./ramsvg.svg";
-
-
-// import svg from "./mysvg.svg";
+import { FaGithubSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -32,7 +30,7 @@ const Intro = () => {
                 animTimingFunction: "EASE_IN_BOUNCE",
                 type: "oneByOne",
                 duration: 2000,
-                
+
                 onReady: console.log,
               }}
               // style={{ height: "100px", width: "100px" }}
@@ -40,20 +38,19 @@ const Intro = () => {
             />
           </Col>
           <Col className="typewriter testdiv">
-            <span>I'm </span> <span></span>
+            <span>I'm </span>
             <span
               href=""
               className="typewrite"
-              data-period="2000"
+              data-period="500"
               data-type='[  "Creative.", " a Ui/Ux Designer.", "a Web Developer &#123;&#125;." ]'
             >
               <span class="wrap"></span>
             </span>
           </Col>
           <Col className="aboutmetext testdiv">
-            {/* I design and develop services for customers of all sizes,
-            specializing in creating stylish, appealing websites, web services
-            and online stores. */}
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" className="linkedin"/>
+            <img src="https://img.icons8.com/fluency/48/000000/github.png" className="github"/>
           </Col>
         </Col>
         {/* <Col className="bodytag" md={{ span: 2, offset: 2 }}>

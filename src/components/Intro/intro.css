@@ -41,44 +41,35 @@
   font-size: 1.2em;
   color: var(--background-color)
 }
-.rletter {
-  /* font-family: "Zen Kurenaido", sans-serif; */
-  /* font-family: 'Monoton', cursive;
-  font-size: 200px;
-  font-weight: 500;
-  display: inline-block;
-  line-height: 200px;
-  height: 200px;
-  color: var(--text-color);
-  color: var(--pink); */
-  /* border: 0.1em solid #eee; */
+.github ,.linkedin{
+  height: 30px;
+  width: 30px;
+  float: right;
+  cursor: pointer;
+  margin: 1%;
   
 }
-.amletter {
-  /* font-family: "Zen Kurenaido", sans-serif; */
-  /* font-family: 'Monoton', cursive;
-  font-size: 100px;
-  font-weight: 500;
-  display: inline-block;
-  line-height: 300px;
-  height: 200px; */
-  /* color: var(--pink); */
-  /* color: var(--text-color); */
+.linkedin{
+  
+
+}
+.github-square{
+
 }
 
+
 .typewriter {
-  font-size: 30px;
-  /* padding-left: 95px; */
-  
+  font-size: 25px; 
   color: var(--text-color);
-  padding-left: 150px;
-  width: 590px;
+  text-align: right;
+  
 }
 .typewrite {
-  color:  #a050d9;
+  color:  #9329df;
   font-weight: 700;
   font-family: 'Roboto Mono', monospace;
   background-color: lightgreen;
+  
 
   
 
