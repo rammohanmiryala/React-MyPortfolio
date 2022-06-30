@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
 import logo from "../../assets/logologo3.png";
+import "./hover.js"
 
 function Navigationbar() {
   return (
@@ -16,7 +17,7 @@ function Navigationbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <a href="#Myself" className="itemSpacing">
+            <a href="#Myself" className="itemSpacing " id="myselfnav">
               Myself
             </a>
             <a href="#MyWork" className="itemSpacing">

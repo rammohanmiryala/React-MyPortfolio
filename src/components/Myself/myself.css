@@ -1,0 +1,86 @@
+:root {
+  --pink: #ffd4d4;
+  --testborder: 1px solid #37ffd0;
+  --textgreen: #37ffd0;
+  --text-color: #122932;
+  /* --background-color: #fbc93d; */
+  /* --text-color: #76ecfc; */
+}
+.testdiv {
+  border: 0.0px solid #eee;
+}
+.myselfcontainer {
+  /* background: linear-gradient(
+    to right,
+    #6f77f4 0%,
+    #6f77f4 35%,
+    #f66666 35%,
+    #ff6666 100%
+  ); */
+}
+.orderedlist {
+}
+
+.ram_cartoon {
+  width: 340px;
+  height: 450px;
+  border: 10px solid rgb(175, 175, 175);
+  border-radius: 10px;
+  padding: 1em 1em 0em 1em;
+}
+.myself {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+.myselfleftdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myselftext {
+  font-size: 6em;
+  color: var(--text-color);
+  font-weight: 900;
+  line-height: 1em;
+}
+.myself .myselftext {
+  display: block;
+}
+.aboutme {
+  margin-top: 1em;
+}
+
+.skills-heading {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+}
+ol {
+  list-style: none;
+}
+
+ol li::before {
+  content: "\2713"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #6f77f4; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width:2em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-bottom: 0.7em;
+}
+
+.text15 {
+  font-size: 1.5em;
+}
+.skills-tab{
+
+ 
+  
+
+}
+.text15{
+  font-size: 1em;
+
+
+}

@@ -3,7 +3,7 @@
   --testborder: 1px solid #37ffd0;
   --textgreen: #37ffd0;
   --text-color: #122932;
-  --background-color:#fbc93d;
+  --background-color: #fbc93d;
   /* --text-color: #76ecfc; */
 }
 /* For demonstration purposes only: */
@@ -16,77 +16,51 @@
   display: inline-block;
   font-size: 2em;
 }
-.testdiv {
-  /* border: 0.1em solid #eee;
-  margin: 1%; */
-}
-.outercontainer {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
 
-  /* justify-content: center; */
+.outercontainer {
+  min-height: 80vh;
+  /* display: flex;
+  align-items: center;  */
+  position: relative;
 }
 
 .wrapper {
-  margin: 0 auto;
+  position: absolute;
+  top: 130px;
+  
+
 }
 .wavetext {
-  font-size: 1.2em;
-  /* padding-left: 12px; */
+  font-size: 1.5em;
   color: var(--text-color);
 }
-.nametext{
+.nametext {
   margin: 45px auto;
   font-size: 1.2em;
-  color: var(--background-color)
+  color: var(--background-color);
 }
-.github ,.linkedin{
+.github,
+.linkedin {
   height: 30px;
   width: 30px;
   float: right;
   cursor: pointer;
   margin: 1%;
-  
 }
-.linkedin{
-  
-
-}
-.github-square{
-
-}
-
-
 .typewriter {
-  font-size: 25px; 
+  font-size: 2em;
   color: var(--text-color);
   text-align: right;
-  
 }
 .typewrite {
-  color:  #9329df;
+  color: #9329df;
   font-weight: 700;
-  font-family: 'Roboto Mono', monospace;
-  background-color: lightgreen;
-  
-
-  
-
+  font-family: "Roboto Mono", monospace;
+  /* background-color: lightgreen; */
 }
 
 .aboutmetext {
   padding-left: 18px;
-  
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-}
-@media (min-width: 768px) and (max-width: 1024px) {
 }
 
 @keyframes wave-animation {
@@ -115,123 +89,8 @@
     transform: rotate(0deg);
   }
 }
-/* ------------------------------- */
-/* .aboutmetext {
-  font-size: 1.2em;
-}
 
-.mainbodydiv {
-  border: var(--testborder);
-  height: 80vh;
-  margin-top: 3%;
-}
-.introbody {
-  border-left: 1px solid #9b9b9b;
-  padding: 3% 0% 3% 0%;
-  margin: 0 auto;
-  position: relative;
-}
-.mynameis{
-  color: var(--textgreen)
-
-}
-
-col {
-  border: var(--testborder);
-}
-
-.tagtext {
-  border: var(--testborder);
-  margin: 0 auto;
-}
-.wavetext {
-  font-size: 1.2em;
-  position: absolute;
-  top: 10%;
-  margin-left: 1em;
-}
-.hitext {
-  font-size: 2em;
-}
-.nameletter {
-  font-size: 6em;
-  margin-left: 0em;
-}
-.nameletterdiv {
-}
-.Rletter {
-  font-family: "Text Me One", sans-serif;
-  color: var(--pink);
-  font-size: 3em;
-  border: var(--testborder);
-}
-.amletter {
-  font-size: 1.2em;
-  color: var(--pink);
-}
-.dotsletter {
-  font-family: "Text Me One", sans-serif;
-  font-size: 0.6em;
-}
-.designertext {
-  position: absolute;
-  margin-left: 0.4em;
-  top: 65%;
-  font-size: 1.5em;
-}
-.typewrite {
-  color: var(--text-color);
-  font-weight: bold;
-} */
 @media (max-width: 575.98px) {
-  /* .designertext {
-    top: 60%;
-    font-size: 1.5em;
-  }
-  .Rletter {
-    font-size: 2.5em;
-  }
-  .wavetext {
-    font-size: 1em;
-    top: 7%;
-  }
-  .introbody {
-    border-left:none;
-    margin:0px 15px 0px 15px;
-    padding: 0px;
-    
-  }
-  .bodytag{
-    display: none;
-  }
-  .aboutmetext{
-    font-size: 1em;
-    text-align: justify;
-
-  } */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* .designertext {
-    top: 65%;
-    font-size: 1.5em;
-  }
-  .Rletter {
-    font-size: 2.5em;
-  }
-  .wavetext {
-    font-size: 1em;
-    top: 8%;
-  }
-  .introbody {
-    border-left:none;
-    padding: 0px;
-    
-  }
-  .bodytag{
-    display: none;
-  }
-  .aboutmetext{
-    font-size: 0.9em;
-    text-align: justify;
-  } */
 }

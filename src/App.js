@@ -2,8 +2,10 @@ import React from "react";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/intro";
 import ContactUs from "./components/ContactUs/contactUs";
-import AboutUs from "./components/AboutUs/aboutus";
+import Myself from "./components/Myself/myself";
 import Footer from "./components/Footer/footer";
+
+
 
 
 
@@ -13,7 +15,7 @@ function App() {
     <div>
       <Header />
       <Intro /> 
-      <AboutUs /> 
+      <Myself/> 
       <ContactUs/>
       <Footer />
     </div>

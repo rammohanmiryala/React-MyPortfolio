@@ -1,8 +1,17 @@
-* {
-  box-sizing: content-box;
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
+.overview {
   background-color: #fbc93d;
-  
-  /* font-family: "Zen Kurenaido", sans-serif; */
+  color:#122932;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
 }

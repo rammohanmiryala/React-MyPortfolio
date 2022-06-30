@@ -11,12 +11,7 @@ const Intro = () => {
   return (
     <>
       <Container expand="lg" className=" outercontainer testdiv">
-        <Col
-          className="wrapper testdiv"
-          lg="5"
-          xs="10"
-          md={{ span: 4, offset: 4 }}
-        >
+        <Col className="wrapper testdiv" lg="5"   xs="10" md={{ span: 3, offset: 3 }} >
           <Col className="wavetext testdiv">
             <span className="hitext">Hi,</span>
             <span className="wave">👋</span>{" "}
@@ -49,8 +44,14 @@ const Intro = () => {
             </span>
           </Col>
           <Col className="aboutmetext testdiv">
-            <img src="https://img.icons8.com/color/48/000000/linkedin.png" className="linkedin"/>
-            <img src="https://img.icons8.com/fluency/48/000000/github.png" className="github"/>
+            <img
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              className="linkedin"
+            />
+            <img
+              src="https://img.icons8.com/fluency/48/000000/github.png"
+              className="github"
+            />
           </Col>
         </Col>
         {/* <Col className="bodytag" md={{ span: 2, offset: 2 }}>
