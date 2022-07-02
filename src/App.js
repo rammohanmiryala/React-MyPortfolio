@@ -4,19 +4,16 @@ import Intro from "./components/Intro/intro";
 import ContactUs from "./components/ContactUs/contactUs";
 import Myself from "./components/Myself/myself";
 import Footer from "./components/Footer/footer";
-
-
-
-
-
+import Projects from "./components/Projects/project";
 
 function App() {
   return (
     <div>
       <Header />
-      <Intro /> 
-      <Myself/> 
-      <ContactUs/>
+      <Intro />
+      <Myself />
+      <Projects />
+      <ContactUs />
       <Footer />
     </div>
   );

@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .overview {
   background-color: #fbc93d;
   color:#122932;
@@ -10,8 +15,4 @@
 
 html {
   scroll-behavior: smooth;
-}
-*{
-  padding: 0;
-  margin: 0;
 }

@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Ramcartoon from "../../assets/ram_cartoon1.png";
 import { Radio, Space, Tabs } from "antd";
-import type { SizeType } from "antd/lib/config-provider/SizeContext";
 import { useState } from "react";
 import "./myself.css";
 import "antd/dist/antd.css";
@@ -12,7 +11,6 @@ import "antd/dist/antd.css";
 const { TabPane } = Tabs;
 const myself = () => {
   const [tabPosition, setTabPosition] = useState("left");
-  const [size, setSize] = useState("large");
 
   return (
     <div className="myselfcontainer testdiv">
@@ -40,14 +38,14 @@ const myself = () => {
               Here are a few technologies I’ve been working with recently:
             </Col> */}
             <Col className="skills-tab">
-              <Space style={{ marginBottom: 30, marginTop: 20,}}>
+              <Space style={{ marginBottom: 20, marginTop: 20,}}>
                 {" "}
                 {/* Here are a few technologies I’ve been working with recently:
                  */}
                  
               </Space>
-              <Tabs tabPosition={tabPosition} size="large">
-                <TabPane tab="User Experience" key="3" className="text15">
+              <Tabs tabPosition={tabPosition} size="large" >
+                <TabPane tab={ <span className="tab-text-heading"> User Experience</span>} key="3" className="text15" >
                   <Col className="text15 testdiv">
                     <ol>
                       <li>UI/Ux Design</li>
@@ -58,7 +56,7 @@ const myself = () => {
                     </ol>
                   </Col>
                 </TabPane>
-                <TabPane tab="Front End" key="1">
+                <TabPane tab={ <span className="tab-text-heading">Front End</span>} key="1">
                   <Col className="text15 testdiv">
                     <ol>
                       <li>Html</li>
@@ -66,11 +64,11 @@ const myself = () => {
                       <li>React</li>
                       <li>JavaScript</li>
                       <li>Bootstrap</li>
-                      <li>Responsive Design</li>
+                      
                     </ol>{" "}
                   </Col>
                 </TabPane>
-                <TabPane tab="Back End" key="2">
+                <TabPane tab={ <span className="tab-text-heading">Back End</span>} key="2">
                   <Col className="text15 testdiv">
                     <ol>
                       <li>Node.js</li>

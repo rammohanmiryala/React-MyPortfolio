@@ -24,7 +24,7 @@
 .ram_cartoon {
   width: 340px;
   height: 450px;
-  border: 10px solid rgb(175, 175, 175);
+  border: 2px solid rgb(175, 175, 175);
   border-radius: 10px;
   padding: 1em 1em 0em 1em;
 }
@@ -62,7 +62,7 @@ ol {
 
 ol li::before {
   content: "\2713"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #6f77f4; /* Change the color */
+  color: #ff6666; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width:2em; /* Also needed for space (tweak if needed) */
@@ -81,6 +81,24 @@ ol li::before {
 }
 .text15{
   font-size: 1em;
+
+
+}
+.tab-text-heading{
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+
+}
+.tab-text-heading:hover{
+  color: #6f77f4;
+}
+.tab-text-heading::after{
+  color: #6f77f4;
+}
+.ant-tabs-tab.ant-tabs-tab-active {
+  text-shadow:none !important;
+  color: #6f77f4;
 
 
 }
