@@ -9,10 +9,22 @@ import "./project.css";
 function projects() {
   return (
     <>
-      <div className="project-container">
+      <div className="projectcontainer">
         <Container>
+          <Col>
+          <p>Projects</p>
+          </Col>
+          
 
           
+
+
+          
+
+
+
+
+
         </Container>
       </div>
     </>

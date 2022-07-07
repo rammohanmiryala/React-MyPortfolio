@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Ramcartoon from "../../assets/ram_cartoon1.png";
-import { Radio, Space, Tabs } from "antd";
-import { useState } from "react";
+import Tab from "react-bootstrap/Tab";
+import Nav from "react-bootstrap/Nav";
+import "./linkactive";
 import "./myself.css";
 import "antd/dist/antd.css";
+import Buttonlink from "./linkactive";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
-const { TabPane } = Tabs;
-const myself = () => {
-  const [tabPosition, setTabPosition] = useState("left");
-
+function Myself() {
   return (
     <div className="myselfcontainer testdiv">
       <Container>
@@ -33,91 +39,77 @@ const myself = () => {
               specializing in creating stylish, appealing websites, web services
               and online stores.
             </p>
-
-            {/* <Col className="skills-heading">
-              Here are a few technologies I’ve been working with recently:
-            </Col> */}
-            <Col className="skills-tab">
-              <Space style={{ marginBottom: 20, marginTop: 20,}}>
-                {" "}
-                {/* Here are a few technologies I’ve been working with recently:
-                 */}
-                 
-              </Space>
-              <Tabs tabPosition={tabPosition} size="large" >
-                <TabPane tab={ <span className="tab-text-heading"> User Experience</span>} key="3" className="text15" >
-                  <Col className="text15 testdiv">
-                    <ol>
-                      <li>UI/Ux Design</li>
-                      <li>Figma</li>
-                      <li>Sketch</li>
-                      <li>Umls</li>
-                      <li>User Stories</li>
-                    </ol>
+            <Col>
+              <Tab.Container defaultActiveKey="first">
+                <Row className="skills-tab testdiv">
+                  <Col sm={4} lg={4} md={4} className="text-left-div testdiv">
+                    <Nav className="nav-tab testdiv">
+                      <Nav.Item className="navbarItem ">
+                        {" "}
+                        <Nav.Link eventKey="first">
+                          <button className=" button left-text testdiv">
+                            {" "}
+                            User Experience
+                          </button>
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">
+                          <button className=" button left-text testdiv">
+                            FrontEnd
+                          </button>
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">
+                          <button className="button left-text testdiv">
+                            BackEnd
+                          </button>
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
                   </Col>
-                </TabPane>
-                <TabPane tab={ <span className="tab-text-heading">Front End</span>} key="1">
-                  <Col className="text15 testdiv">
-                    <ol>
-                      <li>Html</li>
-                      <li>Css</li>
-                      <li>React</li>
-                      <li>JavaScript</li>
-                      <li>Bootstrap</li>
-                      
-                    </ol>{" "}
+                  <Col sm={6} lg={6} md={4} className="text-right-div testdiv">
+                    <Tab.Content className="right-text">
+                      <Tab.Pane eventKey="first">
+                        <ol>
+                          <li>UI/Ux Design</li>
+                          <li>Figma</li>
+                          <li>Sketch</li>
+                          <li>Umls</li>
+                          <li>User Stories &#38; Mockups </li>
+                        </ol>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        {" "}
+                        <ol>
+                          <li>Html</li>
+                          <li>Css</li>
+                          <li>React</li>
+                          <li>JavaScript</li>
+                          <li>Bootstrap &#38; material ui</li>
+                        </ol>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        {" "}
+                        <ol>
+                          <li>Node.js</li>
+                          <li>GraphQL</li>
+                          <li>NoSQL</li>
+                          <li>MySQL</li>
+                          <li>Webpack</li>
+                        </ol>
+                      </Tab.Pane>
+                    </Tab.Content>
                   </Col>
-                </TabPane>
-                <TabPane tab={ <span className="tab-text-heading">Back End</span>} key="2">
-                  <Col className="text15 testdiv">
-                    <ol>
-                      <li>Node.js</li>
-                      <li>GraphQL</li>
-                      <li>NoSQL</li>
-                      <li>MySQL</li>
-                      <li>Webpack</li>
-                    </ol>
-                  </Col>
-                </TabPane>
-              </Tabs>
+                </Row>
+              </Tab.Container>
             </Col>
           </Col>
         </Row>
       </Container>
     </div>
   );
-};
+}
 
-export default myself;
-
-/* <Row className="ordered-list testdiv">
-              <Col className="testdiv" lg="4">
-                <ol>                
-                  <li>UI/Ux Design</li>
-                  <li>Figma</li>
-                  <li>Sketch</li>
-                  <li>Umls</li>
-                  <li>User Stories</li>
-                </ol>
-              </Col>
-              <Col className="testdiv" lg="5">
-                <ol>
-                  <li>Html</li>
-                  <li>Css</li>
-                  <li>React</li>
-                  <li>JavaScript</li>
-                  <li>Bootstrap</li>
-                  <li>Responsive Design</li>
-                </ol>
-              </Col>
-              <Col className="testdiv">
-                <ol>
-                  <li>Node.js</li>
-                  <li>GraphQL</li>
-                  <li>NoSQL</li>
-                  <li>MySQL</li>
-                  <li>Webpack</li>
-                </ol>
-              </Col>
-            </Row> */
-// 
+export default Myself;
