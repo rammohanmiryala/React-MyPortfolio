@@ -21,7 +21,7 @@ function Myself() {
   return (
     <div className="myselfcontainer testdiv">
       <Container>
-        <Row className="myself testdiv">
+        <Row className="myself ">
           <Col className="myselfleftdiv testdiv" lg="4">
             <img
               src={Ramcartoon}
@@ -29,9 +29,7 @@ function Myself() {
               className="ram_cartoon testdiv"
             />
           </Col>
-          {/* <Col lg="1">
-          </Col> */}
-          <Col className="myselfrightdiv" lg="7" md={{ span: 1, offset: 1 }}>
+          <Col className="myselfrightdiv" lg="7" md={{ span: 0, offset: 1 }}>
             <span className="myselftext testdiv">My</span>
             <span className="myselftext testdiv">Self..</span>
             <p className="aboutme testdiv">
