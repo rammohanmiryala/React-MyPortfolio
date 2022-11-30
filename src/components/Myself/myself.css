@@ -27,13 +27,19 @@
   align-items: center;
 }
 .myselftext {
-  font-size: 6em;
+  font-size: 130px;
   color: var(--text-color);
   font-weight: 700;
   line-height: 1em;
   font-family: 'Oswald', sans-serif;
 }
-
+.myselftext1{
+  font-size: 80px;
+  
+}
+.myselftext2{
+  color: #ff2525
+}
 .myselftext {
   display: block;
 }

@@ -12,27 +12,20 @@
   justify-content: center;
   flex-direction: column;
 }
-.book-cover-page {
-  background-color: rgb(255, 255, 255);
-}
-
-.project-card {
-  display: flex;
+.card-bg {
   justify-content: center;
-}
-.project-cards {
   display: flex;
-  justify-content: center;
 }
-
+/*--------------------- left div  items ------------------------*/
+.project-left-div {
+}
 .project-text-span {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .project-text {
-  font-size: 6em;
+  font-size: 130px;
   color: var(--text-color);
   font-weight: 700;
   display: block;
@@ -40,72 +33,48 @@
   text-align: left;
   transform: rotate(0deg);
   font-family: "Oswald", sans-serif;
-  
-
 }
+
 .project-text1 {
-  text-align: left;
+  font-size: 80px;
+  position: sticky;
+  top: 10px;
 }
-.project-div {
-  display: block;
-}
-
-.card-img {
-  height: 200px;
-  border-bottom: 4px solid rgb(39, 108, 165);
-  
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-  
-}
-.card-div:hover .card-img {
-  background-color: #122932;
-  position: absolute;
-  transform: rotate(10deg);
-  transform-origin: top left;
-  transition: transform 0.6s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  
-
-}
-.git-icon {
-  position: absolute;
-  background-color: #122932; 
-  width: 400px;
-  height: 200px;
-  z-index: -1;
-  border-radius: 10px;
-}
-.cards {
-  margin-bottom: 70px;
-  
-  width: 400px;
-  border-radius: 30px;
-  position: relative;
-  z-index: 1;
-  /* overflow: hidden; */
+.project-text1-1 {
+  font-size: 1em;
+  color: #ff2525;
 }
 
-.card-text-heading{
-    font-size:20px;
-    
-    
-    font-weight:bold;
-    text-align: center;
-    padding: 20px 0px;
-
-
-
+/*--------------------- right div  items ------------------------*/
+.card-image {
+  height: 240px;
 }
-.icons8, .github1{
-    color:#fff;
-    float:right;
-    height:35px;
-    margin-top:10px;
-    margin-right:10px;
-    cursor: pointer;
-   
-
-
+.card-outer-border {
+ 
+}
+.card-outer-border::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: rgb(78, 80, 80);
+  bottom: 0px;
+  margin: 30px auto;
+}
+.card-outer-margin {
+  margin-bottom: 20px;
 }
 
+.card-text {
+  font-size: 0.8em;
+  text-align: justify;
+}
+.card-center {
+  display: flex;
+  justify-content: center;
+}
+.read-or-hide{
 
+  font-weight: bold;
+  cursor: pointer;
+
+}

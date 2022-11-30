@@ -30,7 +30,7 @@ function Myself() {
             />
           </Col>
           <Col className="myselfrightdiv" lg="7" md={{ span: 0, offset: 1 }}>
-            <span className="myselftext testdiv">My</span>
+            <span className="myselftext myselftext1 testdiv"><span className="myselftext2" >M</span>y</span>
             <span className="myselftext testdiv">Self..</span>
             <p className="aboutme testdiv">
               I design and develop services for customers of all sizes,

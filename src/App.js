@@ -4,7 +4,8 @@ import Intro from "./components/Intro/intro";
 import ContactUs from "./components/ContactUs/contactUs";
 import Myself from "./components/Myself/myself";
 import Footer from "./components/Footer/footer";
-import Projects from "./components/Projects/project";
+// import Projects from "./components/Projects/project";
+import "bootswatch/dist/solar/bootstrap.min.css";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <Intro />
       <Myself />
-      <Projects />
+      {/* <Projects /> */}
       <ContactUs />
       <Footer />
     </div>

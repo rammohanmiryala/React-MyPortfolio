@@ -1,67 +1,55 @@
-
-.contactUs{
-    display: flex;
-    justify-content: center;
+.contactUs {
+  display: flex;
+  justify-content: center;
 }
-.contact{
-    /* border: 3px solid  black; */
-    padding: 15px 30px 15px 30px;    
-    display: flex;
-    justify-content: flex-end;
-    /* background-color:blueviolet; */
-    color: rgb(55, 56, 56);
-    cursor: pointer;
-    position: relative;
-    /* overflow: hidden; */
-    font-size: 20px;
-    font-weight: bold;
-    
-
+.contact {
+  /* border: 3px solid  black; */
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color:blueviolet; */
+  color: rgb(55, 56, 56);
+  cursor: pointer;
+  position: relative;
+  /* overflow: hidden; */
+  font-size: 20px;
+  font-weight: bold;
 }
-.contact::after{
-    position: absolute;
-    content: '';
-    padding: 15px 30px 15px 30px; 
-    background-color: rgb(72, 21, 212);
-    top: -4px;
-    left:-8px;
-    bottom: -8px;
-    right: -8px;
-    z-index: -2;
-    transform: rotate(0deg) translate(-100%, 0%);
-    transform-origin: 10px;
-    transition: transform 0.5s ease-in-out;
-    border-top: 10px solid skyblue;
-
-
+.contact::after {
+  position: absolute;
+  content: "";
+  padding: 15px 30px 15px 30px;
+  background-color: rgb(72, 21, 212);
+  top: -4px;
+  left: -8px;
+  bottom: -8px;
+  right: -8px;
+  z-index: -2;
+  transform: rotate(0deg) translate(-100%, 0%);
+  transform-origin: 10px;
+  transition: transform 0.5s ease-in-out;
+  border-top: 10px solid skyblue;
 }
-.contact:hover::after{
-    transform: rotate(0deg) translate(0, 0);
-
+.contact:hover::after {
+  transform: rotate(0deg) translate(0, 0);
 }
 
-
-.contactUs-outer-border{
-
-    border: 3px solid var(--text-color);
-    height: 400px;
-    margin-top: 200px;
-    border-radius: 10px;
-    text-align: center;
-
-    
-
+.contactUs-outer-border {
+  border: 0.5px solid rgb(139, 139, 139);
+  height: 400px;
+  margin-top: 250px;
+  border-radius: 10px;
+  text-align: center;
 }
-.get-in-touch{
-    font-weight:800;
-    font-size: 3em;
-    font-family: 'Oswald', sans-serif;
-    background-color:bisque;
-    margin: 0.2em;
-
+.get-in-touch {
+  font-weight: 800;
+  font-size: 3em;
+  font-family: "Oswald", sans-serif;
+  background-color: bisque;
+  margin: 0.2em;
 }
-.contacts-description{
-    width: 600px;
-    font-size:0.9em;
-    margin:0 auto;
+.contacts-description {
+  width: 600px;
+  font-size: 0.9em;
+  margin: 0 auto;
 }
